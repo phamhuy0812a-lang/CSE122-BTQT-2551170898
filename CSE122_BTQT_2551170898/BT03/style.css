@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #7ec8e3, #0a5c8a);
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Khung chứa chính bao bọc nội dung */
+.page-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    max-width: 850px;
+    padding: 40px;
+}
+
+/* Tiêu đề chính */
+.main-title {
+    color: #0b3d5c; /* Màu xanh đậm */
+    text-align: center; /* Căn giữa */
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Khối mở đầu (Khối nhấn mạnh) */
+.intro-box {
+    background-color: #0b3d5c; /* Nền xanh đậm */
+    color: #ffffff; /* Chữ trắng */
+    font-style: italic; /* In nghiêng */
+    padding: 18px 22px;
+    border-radius: 8px; /* Bo góc */
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.intro-box p {
+    margin: 0;
+}
+
+/* Ảnh minh họa chèn nổi bên phải */
+.featured-img {
+    float: right;
+    width: 320px;
+    height: auto;
+    border-radius: 8px; /* Bo góc 8px */
+    margin-left: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Các đoạn văn thân bài */
+.body-text {
+    text-align: justify; /* Căn đều hai bên */
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* Drop cap: Tô đậm chữ cái đầu tiên của các đoạn thân bài màu xanh */
+.body-text::first-letter {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0b3d5c;
+    float: left;
+    line-height: 1;
+    margin-right: 6px;
+}
+
+/* Clearfix chống vỡ khung do dùng float */
+.clearfix {
+    clear: both;
+}

@@ -1,0 +1,118 @@
+/* Thiết lập chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fef3c7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    margin: 0;
+}
+
+.title {
+    color: #b22222;
+    border-bottom: 2px solid #b22222;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Thẻ form: nền #FFFFFF, viền #fed7aa, bo góc 12px */
+.form-container {
+    background-color: #ffffff;
+    border: 2px solid #fed7aa;
+    border-radius: 12px;
+    padding: 30px 35px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Tiêu đề: chữ #c2410c */
+.form-title {
+    color: #c2410c;
+    margin: 0 0 6px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.form-subtitle {
+    color: #6b7280;
+    font-size: 13px;
+    margin: 0 0 24px 0;
+}
+
+/* Từng nhóm ô nhập */
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+/* Ô nhập chung */
+.form-group input {
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+/* Ô nhập khi lỗi: viền lỗi #dc2626, nền hồng nhạt */
+.form-group input.error {
+    border-color: #dc2626;
+    background-color: #fef2f2;
+}
+
+/* Ô nhập khi hợp lệ: viền hợp lệ #16a34a */
+.form-group input.valid {
+    border-color: #16a34a;
+    background-color: #ffffff;
+}
+
+/* Thông báo lỗi: chữ #dc2626 */
+.msg.error-msg {
+    color: #dc2626;
+    font-size: 13px;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+/* Thông báo hợp lệ: chữ #16a34a kèm dấu ✓ */
+.msg.valid-msg {
+    color: #16a34a;
+    font-size: 13px;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+/* Nút đăng ký: nền #c2410c, chữ #FFFFFF */
+.btn-submit {
+    background-color: #c2410c;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #9a3412;
+}

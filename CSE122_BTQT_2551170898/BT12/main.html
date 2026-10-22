@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 12 — In lịch</title>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <!-- Khối hiển thị kết quả Lịch -->
+        <div class="calendar-box">
+            <div class="year-text" id="displayYear">2026</div>
+            <div class="month-text" id="displayMonth">Tháng 12</div>
+            <div class="day-number" id="displayDay">24</div>
+            <div class="day-name" id="displayWeekday">Thứ hai</div>
+        </div>
+
+        <!-- Lời chào theo buổi -->
+        <div class="greeting" id="displayGreeting">Chào buổi sáng!</div>
+
+        <!-- Form nhập liệu -->
+        <div class="form-box">
+            <div class="input-group">
+                <label for="inputDay">Ngày</label>
+                <input type="number" id="inputDay" value="24" min="1" max="31">
+            </div>
+            <div class="input-group">
+                <label for="inputMonth">Tháng</label>
+                <input type="number" id="inputMonth" value="12" min="1" max="12">
+            </div>
+            <div class="input-group">
+                <label for="inputYear">Năm</label>
+                <input type="number" id="inputYear" value="2026" min="1000">
+            </div>
+            <button class="btn-print" id="btnPrint">In<br>lịch</button>
+        </div>
+    </div>
+
+    <!-- Liên kết file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 20 — Hiệu ứng ảnh với CSS Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 class="title">Bài 20 — Hiệu ứng ảnh với CSS Filter</h2>
+
+    <!-- Khung chứa tổng thể (nền tối #111827) -->
+    <div class="wrapper">
+        <!-- Khung ảnh: nền #1c2226, bo góc 12px -->
+        <div class="image-box">
+            <img id="effect-img" src="Anh/Bai20/hoahong.gif" alt="Hoa hồng" class="grayscale">
+            <!-- Dòng chữ gradient vàng gold, in nghiêng[cite: 10] -->
+            <div class="subtitle">Special For You</div>
+        </div>
+
+        <!-- Thanh nút hiệu ứng (13 nút)[cite: 10] -->
+        <div class="button-group">
+            <button class="btn active" onclick="applyEffect('gray', this)">Gray</button>
+            <button class="btn" onclick="applyEffect('xray', this)">Xray</button>
+            <button class="btn" onclick="applyEffect('invert', this)">Invert</button>
+            <button class="btn" onclick="applyEffect('fliph', this)">FlipH</button>
+            <button class="btn" onclick="applyEffect('flipv', this)">FlipV</button>
+            <button class="btn" onclick="applyEffect('glow', this)">Glow</button>
+            <button class="btn" onclick="applyEffect('shadow', this)">Shadow</button>
+            <button class="btn" onclick="applyEffect('bold-shadow', this)">Bold Shadow</button>
+            <button class="btn" onclick="applyEffect('dropshadow', this)">DropShadow</button>
+            <button class="btn" onclick="applyEffect('blur', this)">Blur</button>
+            <button class="btn" onclick="applyEffect('wave', this)">Wave</button>
+            <button class="btn" onclick="applyEffect('mask', this)">Mask</button>
+            <button class="btn" onclick="applyEffect('alpha', this)">Alpha</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

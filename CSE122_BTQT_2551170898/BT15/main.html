@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 15 — Máy tính đơn giản (JavaScript)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 class="title">Bài 15 — Máy tính đơn giản (JavaScript)</h2>
+
+    <div class="calculator">
+        <!-- Màn hình hiển thị -->
+        <div class="display">
+            <div id="previous-operand" class="previous-operand"></div>
+            <div id="current-operand" class="current-operand">0</div>
+        </div>
+
+        <!-- Bàn phím lưới 4x5 -->
+        <div class="keypad">
+            <!-- Hàng 1 -->
+            <button class="btn btn-action" onclick="clearDisplay()">C</button>
+            <button class="btn btn-operator" onclick="appendCharacter('()')">( )</button>
+            <button class="btn btn-operator" onclick="appendCharacter('%')">%</button>
+            <button class="btn btn-operator" onclick="appendCharacter('/')">÷</button>
+
+            <!-- Hàng 2 -->
+            <button class="btn btn-number" onclick="appendCharacter('7')">7</button>
+            <button class="btn btn-number" onclick="appendCharacter('8')">8</button>
+            <button class="btn btn-number" onclick="appendCharacter('9')">9</button>
+            <button class="btn btn-operator" onclick="appendCharacter('*')">×</button>
+
+            <!-- Hàng 3 -->
+            <button class="btn btn-number" onclick="appendCharacter('4')">4</button>
+            <button class="btn btn-number" onclick="appendCharacter('5')">5</button>
+            <button class="btn btn-number" onclick="appendCharacter('6')">6</button>
+            <button class="btn btn-operator" onclick="appendCharacter('-')">-</button>
+
+            <!-- Hàng 4 -->
+            <button class="btn btn-number" onclick="appendCharacter('1')">1</button>
+            <button class="btn btn-number" onclick="appendCharacter('2')">2</button>
+            <button class="btn btn-number" onclick="appendCharacter('3')">3</button>
+            <button class="btn btn-operator" onclick="appendCharacter('+')">+</button>
+
+            <!-- Hàng 5 -->
+            <button class="btn btn-number btn-zero" onclick="appendCharacter('0')">0</button>
+            <button class="btn btn-number" onclick="appendCharacter('.')">.</button>
+            <button class="btn btn-equal" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

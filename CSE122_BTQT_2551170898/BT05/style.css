@@ -1,0 +1,111 @@
+/* Thiết lập chung cho trang */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Khung bọc toàn bộ nội dung */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Tiêu đề công ty: chữ hồng đậm #C2185B, căn giữa */
+.company-title {
+    color: #C2185B;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Bố cục 2 cột bằng Flexbox */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Cột trái chứa ảnh */
+.left-col {
+    flex: 0 0 180px;
+    text-align: center;
+}
+
+.rose-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cột phải chứa nội dung */
+.right-col {
+    flex: 1;
+}
+
+/* Tên mục (1, 2): nền hồng #FFC0CB, in đậm, nền nổi bật */
+.section-title {
+    background-color: #FFC0CB;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px 12px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    border-radius: 2px;
+}
+
+/* Danh sách mục 1: bullet hình vuông (square) */
+.list-intro {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.list-intro li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #333333;
+}
+
+/* Danh sách mục 2: bullet tròn rỗng (circle) */
+.list-contact {
+    list-style-type: circle;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.list-contact li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #333333;
+}
+
+/* Dòng bản quyền: chữ #0000EE, gạch chân, căn phải/giữa */
+.copyright-bar {
+    text-align: right;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.copyright-link {
+    color: #0000EE;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.copyright-link:hover {
+    color: #0000aa;
+}

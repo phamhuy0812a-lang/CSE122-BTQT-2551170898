@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17 — Kiểm tra biểu mẫu bằng JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 class="title">Bài 17 — Kiểm tra biểu mẫu bằng JavaScript</h2>
+
+    <!-- Thẻ form: nền #FFFFFF, viền #fed7aa, bo góc 12px -->
+    <div class="form-container">
+        <h1 class="form-title">Đăng ký tài khoản</h1>
+        <p class="form-subtitle">Dữ liệu được kiểm tra bằng JavaScript trước khi gửi.</p>
+
+        <form id="register-form" novalidate>
+            <!-- Họ và tên -->
+            <div class="form-group">
+                <label for="fullname">Họ và tên</label>
+                <input type="text" id="fullname" placeholder="Nguyễn Văn An" />
+                <div class="msg" id="msg-fullname"></div>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="an.nv@example.com" />
+                <div class="msg" id="msg-email"></div>
+            </div>
+
+            <!-- Mật khẩu -->
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" placeholder="••••••" />
+                <div class="msg" id="msg-password"></div>
+            </div>
+
+            <!-- Xác nhận mật khẩu -->
+            <div class="form-group">
+                <label for="confirm-password">Xác nhận mật khẩu</label>
+                <input type="password" id="confirm-password" placeholder="••••••" />
+                <div class="msg" id="msg-confirm-password"></div>
+            </div>
+
+            <!-- Nút đăng ký: nền #c2410c, chữ #FFFFFF -->
+            <button type="submit" class="btn-submit">Đăng ký</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

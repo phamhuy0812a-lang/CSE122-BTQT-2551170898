@@ -1,0 +1,125 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nền trang: ảnh nền Nen.gif lặp */
+body {
+    background-image: url('Anh/Bai12/Nen.gif');
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container chính bọc lịch và form */
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+/* Ô lịch: viền #ccc, nền #FFFFFF, bo góc, căn giữa */
+.calendar-box {
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Năm / số ngày: chữ #C62828, số ngày cỡ lớn 52px */
+.year-text {
+    color: #C62828;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.day-number {
+    color: #C62828;
+    font-size: 52px;
+    font-weight: bold;
+    margin: 10px 0;
+    line-height: 1;
+}
+
+/* Tháng / thứ: chữ #1565C0, cỡ 18px */
+.month-text, .day-name {
+    color: #1565C0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Lời chào: chữ #C62828, in nghiêng */
+.greeting {
+    color: #C62828;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form nhập: viền #1565C0, 3 ô + 1 nút */
+.form-box {
+    border: 2px solid #1565C0;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 6px 4px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+/* Nút bấm In lịch */
+.btn-print {
+    background-color: #4f6b75;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.btn-print:hover {
+    background-color: #3b525a;
+}

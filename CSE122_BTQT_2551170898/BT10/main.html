@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang liên hệ - Form liên hệ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <!-- Header tiêu đề form -->
+        <div class="form-header">
+            <h2>Liên hệ với chúng tôi</h2>
+            <p>Vui lòng điền thông tin bên dưới, chúng tôi sẽ phản hồi trong 24 giờ.</p>
+        </div>
+
+        <!-- Biểu mẫu liên hệ -->
+        <form action="#" method="POST" class="contact-form">
+            <!-- Hàng 1: Họ và tên & Email (bố cục 2 cột) -->
+            <div class="form-row grid-2">
+                <div class="form-group">
+                    <label for="fullname">Họ và tên</label>
+                    <input type="text" id="fullname" name="fullname" value="Nguyễn Văn An" placeholder="Nhập họ và tên" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" value="an.nv@tlu.edu.vn" placeholder="Nhập địa chỉ email" required>
+                </div>
+            </div>
+
+            <!-- Hàng 2: Số điện thoại & Chủ đề (bố cục 2 cột) -->
+            <div class="form-row grid-2">
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" name="phone" value="0987 654 321" placeholder="Nhập số điện thoại">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Chủ đề</label>
+                    <select id="subject" name="subject">
+                        <option value="khoahoc" selected>Hỏi về khoá học</option>
+                        <option value="baitap">Hỏi về bài tập</option>
+                        <option value="gopy">Góp ý dịch vụ</option>
+                        <option value="khac">Khác</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Hàng 3: Nội dung dài (textarea) -->
+            <div class="form-group full-width">
+                <label for="message">Nội dung</label>
+                <textarea id="message" name="message" rows="4" placeholder="Nhập nội dung cần liên hệ...">Em muốn hỏi về lịch nộp bài tập môn Lập trình Web ạ.</textarea>
+            </div>
+
+            <!-- Hàng 4: Checkbox đồng ý -->
+            <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="agree" checked required>
+                    <span>Tôi đồng ý nhận email phản hồi.</span>
+                </label>
+            </div>
+
+            <!-- Hàng 5: Nút Gửi liên hệ và Nhập lại -->
+            <div class="form-actions">
+                <button type="submit" class="btn btn-submit">Gửi liên hệ</button>
+                <button type="reset" class="btn btn-reset">Nhập lại</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

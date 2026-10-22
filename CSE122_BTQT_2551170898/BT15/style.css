@@ -1,0 +1,106 @@
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.title {
+    color: #b22222;
+    border-bottom: 2px solid #b22222;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Vỏ máy tính: nền #111827, bo góc 16px, bóng đổ[cite: 4] */
+.calculator {
+    background-color: #111827;
+    width: 360px;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Màn hình: nền #022c22, chữ #4ade80[cite: 4] */
+.display {
+    background-color: #022c22;
+    color: #4ade80;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/* Phép tính nhỏ ở trên */
+.previous-operand {
+    font-size: 16px;
+    color: #4ade80;
+    opacity: 0.8;
+}
+
+/* Kết quả lớn ở dưới */
+.current-operand {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Bàn phím lưới 4 cột[cite: 4] */
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Kiểu chung cho các nút bấm */
+.btn {
+    padding: 16px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+}
+
+/* Nút số: nền #25313f, chữ #e5e7eb[cite: 4] */
+.btn-number {
+    background-color: #25313f;
+    color: #e5e7eb;
+}
+
+/* Nút phép tính: nền #0d6efd, chữ #FFFFFF[cite: 4] */
+.btn-operator {
+    background-color: #0d6efd;
+    color: #FFFFFF;
+}
+
+/* Nút C: màu #dc2626[cite: 4] */
+.btn-action {
+    background-color: #dc2626;
+    color: #FFFFFF;
+}
+
+/* Nút =: màu #16a34a, chữ #FFFFFF[cite: 4] */
+.btn-equal {
+    background-color: #16a34a;
+    color: #FFFFFF;
+}
+
+/* Nút số 0 có thể tuỳ chỉnh nếu muốn chiếm chỗ, để mặc định lưới 4 cột */
+.btn-zero {
+    /* Có thể giữ nguyên kích thước lưới */
+}

@@ -1,0 +1,176 @@
+/* Thiết lập chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    margin: 0;
+}
+
+.main-title {
+    color: #b22222;
+    border-bottom: 2px solid #b22222;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Thẻ ứng dụng: nền #FFFFFF, bóng đổ, rộng 600px */
+.todo-app {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* Tiêu đề nền #6d28d9, chữ #FFFFFF kèm mô tả */
+.app-header {
+    background-color: #6d28d9;
+    color: #ffffff;
+    padding: 24px 28px;
+}
+
+.app-header h1 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.app-header p {
+    margin: 0;
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+.app-body {
+    padding: 24px 28px;
+}
+
+/* Ô nhập + Nút Thêm */
+.input-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-container input:focus {
+    border-color: #6d28d9;
+}
+
+/* Nút thêm #6d28d9 */
+.btn-add {
+    background-color: #6d28d9;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-add:hover {
+    background-color: #5b21b6;
+}
+
+/* Danh sách việc */
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Mỗi dòng công việc có đường kẻ nét đứt #ede9fe */
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1.5px dashed #ede9fe;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.todo-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    flex: 1;
+}
+
+/* Ô đánh dấu: viền #a78bfa, khi xong có nền #6d28d9 */
+.checkbox {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #a78bfa;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.todo-item.completed .checkbox {
+    background-color: #6d28d9;
+    border-color: #6d28d9;
+}
+
+/* Tên công việc */
+.todo-text {
+    font-size: 15px;
+    color: #1f2937;
+    transition: color 0.2s;
+}
+
+/* Khi hoàn thành: gạch ngang, mờ đi */
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+/* Nút xoá: nền #fde2e2, chữ #b91c1c */
+.btn-delete {
+    background-color: #fde2e2;
+    color: #b91c1c;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-delete:hover {
+    background-color: #fca5a5;
+}
+
+/* Phần hiển thị số công việc còn lại */
+.app-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6b7280;
+}

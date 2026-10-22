@@ -1,0 +1,146 @@
+/* Thiết lập chung cho toàn bộ trang */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Thẻ hồ sơ (CV Card): 2 cột 280px + 1fr, nền trắng, bóng đổ */
+.cv-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Cột trái: gradient #1565C0 -> #0d3f7a, chữ trắng, căn giữa */
+.left-col {
+    background: linear-gradient(180deg, #1565C0, #0d3f7a);
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ảnh đại diện vẽ bằng CSS: hình tròn, nền trắng, chữ #1565C0 */
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    color: #1565C0;
+    font-size: 36px;
+    font-weight: bold;
+    border-radius: 50%; /* Bo tròn hình cầu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Họ tên và chức danh */
+.user-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.user-title {
+    font-size: 13px;
+    opacity: 0.85;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Thông tin liên hệ cột trái */
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.contact-info li {
+    opacity: 0.9;
+    word-break: break-all;
+}
+
+/* Cột phải: thông tin chi tiết */
+.right-col {
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cv-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tiêu đề mục cột phải: chữ #1565C0, có gạch chân */
+.section-title {
+    color: #1565C0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Văn bản nội dung các mục */
+.section-text {
+    font-size: 13px;
+    color: #444444;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Danh sách Kỹ năng dạng chip bo tròn */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.skill-chip {
+    background-color: #e3f0ff; /* Nền xanh nhạt */
+    color: #0d3f7a; /* Chữ xanh đậm */
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 20px; /* Bo tròn dạng chip */
+}
+
+/* Nhóm liên kết màu xanh #1565C0 */
+.links-group {
+    font-size: 13px;
+    color: #888888;
+}
+
+.links-group a {
+    color: #1565C0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links-group a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,101 @@
+/* Quy định chung cho toàn trang */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Khung bọc toàn bộ nội dung với nền vàng kem nhạt */
+.container {
+    background-color: #fdf5e6; /* Nền kem/vàng nhạt */
+    width: 100%;
+    max-width: 750px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề: chữ #E65100 (màu cam), căn giữa */
+.main-title {
+    color: #E65100;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Bố cục 2 cột bằng Flexbox */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Cột bên trái chứa ảnh minh họa */
+.left-col {
+    flex: 0 0 200px;
+    text-align: center;
+}
+
+.food-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cột bên phải chứa bảng */
+.right-col {
+    flex: 1;
+}
+
+/* Định dạng Bảng danh sách */
+.food-table {
+    width: 100%;
+    border-collapse: collapse; /* Gộp đường viền */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+/* Hàng tiêu đề bảng: nền #E65100 (cam), chữ #FFFFFF (trắng) */
+.food-table thead tr {
+    background-color: #E65100;
+    color: #FFFFFF;
+}
+
+.food-table th {
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Cột "STT" hẹp và căn giữa */
+.food-table th.col-stt,
+.food-table td.stt {
+    width: 60px;
+    text-align: center;
+}
+
+/* Cột "Tên món ăn" rộng hơn */
+.food-table th.col-name {
+    text-align: left;
+}
+
+/* Định dạng các ô dữ liệu (td) */
+.food-table td {
+    padding: 9px 15px;
+    font-size: 14px;
+    color: #333333;
+    border-bottom: 1px solid #E0D6C2; /* Kẻ dòng gạch dưới #E0D6C2 */
+}
+
+/* Dòng dữ liệu xen kẽ nền #FFFFFF và #FDF8EF */
+.food-table tbody tr:nth-child(even) {
+    background-color: #FDF8EF;
+}
+
+.food-table tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}

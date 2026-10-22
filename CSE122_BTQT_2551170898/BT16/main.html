@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 16 — Danh sách việc cần làm (JavaScript)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 class="main-title">Bài 16 — Danh sách việc cần làm (JavaScript)</h2>
+
+    <!-- Thẻ ứng dụng rộng 600px, nền #FFFFFF, bóng đổ -->
+    <div class="todo-app">
+        <!-- Tiêu đề (nền #6d28d9, chữ #FFFFFF) -->
+        <div class="app-header">
+            <h1>Danh sách việc cần làm</h1>
+            <p>Thêm việc mới, đánh dấu hoàn thành hoặc xoá — tất cả bằng JavaScript.</p>
+        </div>
+
+        <div class="app-body">
+            <!-- Ô nhập + nút Thêm (nút #6d28d9) -->
+            <div class="input-container">
+                <input type="text" id="todo-input" placeholder="Nhập công việc mới..." />
+                <button id="add-btn" class="btn-add">Thêm</button>
+            </div>
+
+            <!-- Danh sách việc (kẻ nét đứt #ede9fe) -->
+            <ul id="todo-list" class="todo-list">
+                <!-- Danh sách việc sẽ được thêm động từ JavaScript -->
+            </ul>
+
+            <!-- Đếm số việc chưa hoàn thành -->
+            <div class="app-footer">
+                <span id="pending-count">Còn 0 việc chưa hoàn thành</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    font-family:Arial, "Times New Roman", sans-serif;
+    background-color: #fffffff;
+    margin: 40px 0;
+}
+
+.box-tho {
+    background-color: #FFFDE7;
+    border: 1px solid #9E9E9E;
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 25px 30px 25px;
+    text-align: center;
+}
+
+.tieu-de {
+    color: #D40000;
+    backgroud-color: #FFD9E6;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.kho-xanh, .kho-do {
+    font-style: italic;
+    line-height: 1.8;
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+.kho-xanh {
+    color: #0033CC;
+}
+
+.kho-do {
+    color: #D40000;
+}
+
+.duong-ke {
+    width: 55%;
+    border: none;
+    border-top: 1.5px solid #0033CC;
+    margin: 20px auto;
+}

@@ -1,0 +1,148 @@
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.title {
+    color: #b22222;
+    border-bottom: 2px solid #b22222;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Khung tổng thể nền tối */
+.wrapper {
+    background-color: #111827;
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 650px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Khung ảnh: nền #1c2226, bo góc 12px[cite: 10] */
+.image-box {
+    background-color: #1c2226;
+    padding: 25px 40px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    min-width: 320px;
+}
+
+.image-box img {
+    max-height: 140px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Dòng chữ gradient vàng gold, in nghiêng[cite: 10] */
+.subtitle {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ffd700, #ffaa00, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Times New Roman", serif;
+}
+
+/* Thanh nút: nền #232b30, 13 nút hiệu ứng[cite: 10] */
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    background-color: #232b30;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Kiểu mặc định cho các nút */
+.btn {
+    background-color: #2c353d;
+    color: #e5e7eb;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    background-color: #3f4c56;
+}
+
+/* Nút đang chọn được tô nổi bật: màu #0d6efd[cite: 10] */
+.btn.active {
+    background-color: #0d6efd;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* --- CÁC HIỆU ỨNG CSS FILTER & TRANSFORM --- */
+.img-gray {
+    filter: grayscale(1);
+}
+
+.img-xray {
+    filter: grayscale(1) invert(1);
+}
+
+.img-invert {
+    filter: invert(1);
+}
+
+.img-fliph {
+    transform: scaleX(-1);
+}
+
+.img-flipv {
+    transform: scaleY(-1);
+}
+
+.img-glow {
+    filter: drop-shadow(0 0 10px #ff4d4d) drop-shadow(0 0 20px #ff1a1a);
+}
+
+.img-shadow {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+}
+
+.img-bold-shadow {
+    filter: drop-shadow(8px 8px 0px #0d6efd);
+}
+
+.img-dropshadow {
+    filter: drop-shadow(0px 10px 8px rgba(255, 255, 255, 0.3));
+}
+
+.img-blur {
+    filter: blur(3px);
+}
+
+.img-wave {
+    /* Giả lập hiệu ứng lượn sóng nhẹ bằng chuyển đổi ma trận hoặc skew */
+    transform: skewX(10deg) skewY(5deg);
+}
+
+.img-mask {
+    /* Hiệu ứng mặt nạ độ tương phản cao */
+    filter: contrast(200%) brightness(120%);
+}
+
+.img-alpha {
+    opacity: 0.4;
+}

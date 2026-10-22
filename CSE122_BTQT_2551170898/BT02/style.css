@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: linear-gradient(135deg, #C9A227, #A8861B); /* Nền vàng mù tạt chuyển màu */
+    color: #FFFFFF; /* Chữ màu trắng */
+    padding: 30px;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tiêu đề trích dẫn */
+.quote-title {
+    text-align: center; /* Căn giữa */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Đổ bóng chữ */
+}
+
+/* Hình ảnh Vạn Lý Trường Thành */
+.featured-img {
+    float: right; /* Chèn nổi bên phải */
+    width: 280px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    border: 3px solid rgba(255, 255, 255, 0.7); /* Viền trắng mờ */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Các đoạn văn */
+p {
+    text-align: justify; /* Căn đều hai bên */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* Clearfix để tránh bị vỡ khung container khi dùng float */
+.clearfix {
+    clear: both;
+}

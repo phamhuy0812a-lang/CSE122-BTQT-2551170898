@@ -1,0 +1,166 @@
+/* Thiết lập cuộn trang mượt khi click liên kết neo */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e2e8f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Khung chứa toàn trang */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề trang: chữ #1668C1, gạch chân dưới */
+.header-title {
+    color: #1668C1;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1668C1;
+}
+
+/* Bố cục 2 cột (Flexbox/Grid) */
+.main-layout {
+    display: flex;
+    gap: 25px;
+}
+
+/* Cột trái: Menu dọc */
+.sidebar {
+    flex: 0 0 170px;
+}
+
+.menu-title {
+    font-size: 11px;
+    font-weight: bold;
+    color: #777777;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-bottom: 8px;
+}
+
+.menu-list a {
+    color: #1668C1;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.4;
+    display: block;
+}
+
+.menu-list a:hover {
+    text-decoration: underline;
+}
+
+/* Cột phải: Khu vực nội dung */
+.content-area {
+    flex: 1;
+}
+
+/* Thanh chuyên mục: nền #1668C1, chữ #FFFFFF, bo góc nhẹ */
+.category {
+    margin-bottom: 25px;
+    border-bottom: 1px dashed #d0d0d0;
+    padding-bottom: 10px;
+}
+
+.category-header {
+    background-color: #1668C1;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 12px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/* Từng bài viết */
+.article-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dotted #e5e5e5;
+    padding-bottom: 12px;
+}
+
+.article-item:last-of-type {
+    border-bottom: none;
+}
+
+.article-info {
+    flex: 1;
+}
+
+/* Tiêu đề bài viết: chữ #1668C1 */
+.article-title {
+    color: #1668C1;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+}
+
+.article-desc {
+    color: #333333;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Ảnh minh họa bo góc */
+.article-img {
+    width: 120px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* Thông báo mục rỗng */
+.empty-text {
+    font-size: 12px;
+    color: #888888;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+/* Nút về đầu trang: căn phải, chữ #1668C1 */
+.back-to-top {
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.back-to-top a {
+    color: #1668C1;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.back-to-top a:hover {
+    text-decoration: underline;
+}
